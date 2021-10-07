@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <section class="sec">
+    <div class="container">
+        <div class="card">
+            <div class="toggle">
+
+            </div>
+            <div class="img-profile">
+                <img src="image/myProfile.png" alt="Lamp" width="32" height="32">
+            </div>
+            <h1>Thanagrid Chuthai</h1>
+            <h4>Mechanical Engineering</h4>
+            <div class="icon">
+                <span><a href="facebook" class="fa fa-facebook" aria-hidden="false"></a></span>
+                    <span><a href="facebook" class="fa fa-instagram"></a></span>               </span>
+                    <span><a href="facebook" class="fa fa-twitter"></a></span>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+</body>
+<script>
+    const container=document.querySelector('.container');
+    const toggle=document.querySelector('.toggle');
+    toggle.onclick=function(){
+        container.classList.toggle('dark');
+    }
+</script>
+</html>
