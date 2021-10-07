@@ -169,3 +169,19 @@ h4{
 .container.dark .toggle-container{
     background-color: #24292d;
 }
+@media (pointer:coarse){
+    .toggle-container:hover:before{
+        transform: scale(0);
+    }
+    .toggle-container:hover .toggle{
+        color: #2fa1ff;
+    }
+    .icon span:hover:before{
+        transform: scale(0);
+    }
+    .icon span:hover a{
+        color:#2fa1ff;
+    }
+    
+
+}
