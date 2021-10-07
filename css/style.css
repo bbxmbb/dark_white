@@ -129,29 +129,43 @@ h4{
 .icon span:hover:before{
     transform: scale(1);
 }
-.toggle{
+.toggle-container{
     position:absolute;
+    display:flex;
     top:20px;
     right:20px;
-    background-color: #e9f5ff;
-    width:30px;
-    height:30px;
     border-radius: 50%;
-    display:flex;
     justify-content: center;
     align-items: center;
     cursor:pointer;
+    transition: 0.5s;
+    width:30px;
+    height:30px;
+
+    background-color: #e9f5ff;
 }
-.toggle:before{
-    content:'\f186';
-    font-family: fontAwesome;
+.toggle{
     color:#2fa1ff;
+    transition: 0.5s;
+    z-index: 100;
 }
-.container.dark .toggle{
+.toggle-container:before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #2fa1ff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.toggle-container:hover:before{
+    transform: scale(1);
+}
+.toggle-container:hover .toggle{
+    color: white;
+}
+
+.container.dark .toggle-container{
     background-color: #24292d;
-}
-.container.dark .toggle:before{
-    content:'\f185';
-    font-family: fontAwesome;
-    color: #2fa1ff;;
 }
